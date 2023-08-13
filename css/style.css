@@ -1,0 +1,212 @@
+/* COMMON CSS STARTS HERE */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primaryfont: font-family: 'Poppins', sans-serif;
+    --secondaryfont: font-family: 'PT Sans', sans-serif;
+    --primarycolor: #FFCC00;
+    --secondarycolor: #353535;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+body {
+    font-family: var(--primaryfont);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.btn {
+    color: var(--secondarycolor);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    background-color: transparent;
+    padding: 16px 45px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+/* COMMON CSS ENDS HERE */
+/* NAVBAR STARTS HERE */
+nav .logo {
+    width: 40%;
+}
+
+nav .menu {
+    width: 60%;
+    text-align: right;
+}
+
+nav .menu li {
+    display: inline-block;
+}
+
+nav .menu li a {
+    color: var(--secondarycolor);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 18px 22px 5px 22px;
+    display: block;
+    position: relative;
+}
+
+nav .menu li a::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondarycolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all linear;
+}
+
+nav .menu li:hover a::after {
+    width: 100%;
+}
+
+/* NAVBAR ENDS HERE */
+/* BANNER STARTS HERE */
+#banner {
+    padding: 120px;
+}
+
+#banner .banner_cnt {
+    width: 60%;
+}
+
+#banner .banner_img {
+    width: 40%;
+}
+
+#banner .banner_cnt h3 {
+    color: var(--secondarycolor);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#banner .banner_cnt .hand {
+    color: var(--primarycolor);
+}
+
+#banner .banner_cnt h1 {
+    color: var(--secondarycolor);
+    font-family: var(--secondaryfont);
+    font-size: 64px;
+    font-weight: 700;
+    margin: 15px 0 25px;
+}
+
+#banner .banner_cnt p {
+    color: var(--secondarycolor);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 45px;
+}
+
+.btn_bgc {
+    background-color: var(--primarycolor);
+    color: aliceblue;
+    transition: 0.5s all linear;
+    margin-right: 40px;
+}
+
+.btn_bgc:hover {
+    background-color: #5E0F77;
+}
+
+.outline {
+    border: 1px solid #000;
+    transition: 0.5s all linear;
+    background-color: transparent;
+    color: var(--secondarycolor);
+}
+
+.outline:hover {
+    background-color: #5E0F77;
+    color: aliceblue;
+}
+
+.banner_cnt .btn span {
+    color: aliceblue;
+    transition: 0.5s all linear;
+}
+
+.banner_cnt .btn:hover span {
+    color: aliceblue;
+}
+
+.banner_cnt .outline span {
+    color: var(--secondarycolor);
+}
+
+.socials {
+    margin-top: 66px;
+}
+
+.socials p {
+    margin-right: 32px;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials li a {
+    width: 40px;
+    height: 40px;
+    background-color: #F4F3F3;
+    color: #000;
+    display: block;
+    border-radius: 50%;
+    margin: 0 8px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.5s all linear;
+}
+
+.socials li:hover a {
+    background-color: #FFCC00;
+}
+
+.banner_cnt .mouse {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    line-height: 250px;
+}
+
+/* BANNER ENDS HERE */
