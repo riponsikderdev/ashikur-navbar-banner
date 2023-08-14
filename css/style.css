@@ -207,7 +207,7 @@ nav .menu li:hover a::after {
     position: absolute;
     left: 50%;
     bottom: 0;
-    line-height: 250px;
+    line-height: 180px;
 }
 
 /* BANNER ENDS HERE */
