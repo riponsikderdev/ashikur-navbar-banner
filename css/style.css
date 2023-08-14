@@ -100,6 +100,7 @@ nav .menu li:hover a::after {
 /* BANNER STARTS HERE */
 #banner {
     padding: 120px;
+    position: relative;
 }
 
 #banner .banner_cnt {
